@@ -61,3 +61,18 @@
         }
     }
 }
+
+.card-portfolio {
+    .name {
+        color: $background;
+        position: $absolute;
+        padding: 20px;
+        margin-left: -2rem;
+        margin-top: 3rem;
+        background-color: $secondary;
+
+        @media screen and (max-width: $mobile) {
+            margin-left: -1rem !important;
+        }
+    }
+}

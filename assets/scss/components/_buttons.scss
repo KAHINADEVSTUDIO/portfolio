@@ -1,0 +1,34 @@
+.btn {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: $base;
+    padding: 15px 30px;
+    border: $none !important;
+    border-radius: $zero !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.btn-round {
+    padding: 20px !important;
+    border: 2px solid $text !important;
+    border-radius: 50% !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $background;
+        background-color: $text;
+    }
+}
+
+.btn-dark {
+    color: $background;
+    background-color: $second-bg;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary;
+        background-color: $accent;
+    }
+}

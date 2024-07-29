@@ -16,6 +16,12 @@
   text-transform: uppercase;
 }
 
+.sign {
+  font-size: 5.9rem;
+  font-family: "Grand Hotel", cursive;
+  font-weight: 600;
+}
+
 .color--dark {
   color: #3a2d32 !important;
 }
@@ -30,6 +36,10 @@
 
 .color--primary {
   color: #ae979b !important;
+}
+
+.color--accent {
+  color: #ffe3dc !important;
 }
 
 .color--secondary {
@@ -56,6 +66,14 @@
   background-color: #24181d !important;
 }
 
+.background--secondary {
+  background-color: #dbb4ad !important;
+}
+
+.background--accent {
+  background-color: #ffe3dc !important;
+}
+
 .marg {
   margin-top: 2rem;
 }
@@ -80,6 +98,19 @@
 .center {
   align-items: center !important;
   justify-content: center !important;
+}
+
+.separator {
+  width: 20%;
+  height: 2px;
+  margin-right: 2% !important;
+  margin-left: 2% !important;
+  background-color: #dbb4ad;
+}
+@media screen and (max-width: 578px) {
+  .separator {
+    width: 32% !important;
+  }
 }
 
 * {
@@ -147,9 +178,19 @@ h1 {
 h2 {
   font-size: 3.9rem;
 }
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 2.8rem !important;
+  }
+}
 
 h3 {
   font-size: 3.8rem;
+}
+@media screen and (max-width: 1024px) {
+  h3 {
+    font-size: 2.7rem !important;
+  }
 }
 
 h4 {
@@ -358,7 +399,7 @@ strong {
 }
 @media screen and (max-width: 1024px) {
   .home .infos {
-    margin-left: 0 !important;
+    margin-left: 0;
     margin-bottom: 8rem;
   }
 }
@@ -381,6 +422,62 @@ strong {
 }
 .home .infos .location {
   margin-left: 10%;
+}
+
+.portfolio .title {
+  margin-bottom: 2rem;
+}
+
+.about .img-me {
+  height: 70vh;
+}
+.about .sign {
+  margin-top: -4rem;
+}
+@media screen and (max-width: 578px) {
+  .about .sign {
+    margin-top: -2.3rem !important;
+    font-size: 4rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .sign {
+    margin-top: -9%;
+  }
+}
+.about .btn-round {
+  width: 7%;
+  position: absolute;
+  margin-left: -3%;
+  margin-top: -3%;
+}
+@media screen and (max-width: 578px) {
+  .about .btn-round {
+    width: 40% !important;
+    margin-top: -10% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .btn-round {
+    width: 20%;
+  }
+}
+.about .content {
+  padding-left: 2rem;
+}
+@media screen and (max-width: 578px) {
+  .about .content {
+    padding-top: 2rem !important;
+    padding-left: 0 !important;
+  }
+}
+
+.contact ul li a {
+  text-align: center;
+  padding: 20px;
+}
+.contact ul li a i {
+  margin-right: 10px;
 }
 
 .card {
@@ -436,6 +533,79 @@ strong {
   .card-service .content .text-content p {
     font-size: 1rem !important;
   }
+}
+
+.card-portfolio .name {
+  color: #F5F5F5;
+  position: absolute;
+  padding: 20px;
+  margin-left: -2rem;
+  margin-top: 3rem;
+  background-color: #dbb4ad;
+}
+@media screen and (max-width: 578px) {
+  .card-portfolio .name {
+    margin-left: -1rem !important;
+  }
+}
+
+.btn {
+  font-size: 19px;
+  font-weight: 600;
+  font-family: "Tajawal", sans-serif;
+  padding: 15px 30px;
+  border: none !important;
+  border-radius: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-round {
+  padding: 20px !important;
+  border: 2px solid #3a2d32 !important;
+  border-radius: 50% !important;
+}
+.btn-round:hover, .btn-round:focus, .btn-round:active {
+  color: #F5F5F5;
+  background-color: #3a2d32;
+}
+
+.btn-dark {
+  color: #F5F5F5;
+  background-color: #24181d;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #ae979b;
+  background-color: #ffe3dc;
+}
+
+.accordion .accordion-item {
+  border: none !important;
+  margin-bottom: 2rem !important;
+  background-color: transparent !important;
+}
+.accordion .accordion-item .accordion-header {
+  border: 1px solid #F5F5F5 !important;
+  background-color: transparent !important;
+}
+.accordion .accordion-item .accordion-header button {
+  color: #F5F5F5 !important;
+  padding: 34px 50px;
+  background-color: transparent !important;
+}
+@media screen and (max-width: 578px) {
+  .accordion .accordion-item .accordion-header button {
+    padding: 34px !important;
+  }
+}
+.accordion .accordion-item .accordion-header button::after {
+  content: none !important;
+}
+.accordion .accordion-item .accordion-body {
+  border-top: none !important;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.accordion .accordion-item .accordion-body p {
+  color: #F5F5F5 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -22,6 +22,12 @@
     text-transform: $uppercase;
 }
 
+.sign {
+    font-size: 5.9rem;
+    font-family: $signing;
+    font-weight: 600;
+}
+
 // COLORS
 
 .color--dark {
@@ -38,6 +44,10 @@
 
 .color--primary {
     color: $primary !important;
+}
+
+.color--accent {
+    color: $accent !important;
 }
 
 .color--secondary {
@@ -64,6 +74,14 @@
 
 .background--second--bg {
     background-color: $second-bg !important;
+}
+
+.background--secondary {
+    background-color: $secondary !important;
+}
+
+.background--accent {
+    background-color: $accent !important;
 }
 
 // MARGIN 
@@ -94,4 +112,18 @@
 .center {
     align-items: $center !important;
     justify-content: $center !important;
+}
+
+// SEPARATOR 
+
+.separator {
+    width: 20%;
+    height: 2px;
+    margin-right: 2% !important;
+    margin-left: 2% !important;
+    background-color: $secondary;
+
+    @media screen and (max-width: $mobile) {
+        width: 32% !important;
+    }
 }
