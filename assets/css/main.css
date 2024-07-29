@@ -234,6 +234,13 @@ strong {
     width: 28% !important;
   }
 }
+.header .lang a {
+  color: #ae979b;
+  font-weight: 600;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-family: "Tajawal", sans-serif;
+}
 .header .btn-menu {
   z-index: 11;
   border: none !important;
@@ -330,6 +337,40 @@ strong {
   .sidebar .menu .nav-item .nav-link:hover::before, .sidebar .menu .nav-item .nav-link:focus::before, .sidebar .menu .nav-item .nav-link:active::before {
     width: 30% !important;
   }
+}
+
+.footer {
+  padding: 40px 0px;
+  background-color: #3a2d32 !important;
+}
+.footer p,
+.footer a {
+  font-size: 0.9rem !important;
+  font-weight: 300 !important;
+}
+.footer a {
+  color: #F5F5F5 !important;
+}
+.footer h6 {
+  color: #ae979b;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+.footer ul li {
+  margin-left: 10px;
+}
+.footer .top {
+  bottom: 10px;
+  left: 10px;
+  display: none;
+  padding: 20px !important;
+  position: fixed;
+  background-color: #5d4b59;
+}
+.footer .top .icon {
+  color: #F5F5F5;
 }
 
 .home .background--width {
@@ -430,6 +471,8 @@ strong {
 
 .about .img-me {
   height: 70vh;
+  z-index: -3;
+  position: relative;
 }
 .about .sign {
   margin-top: -4rem;
@@ -539,7 +582,7 @@ strong {
   color: #F5F5F5;
   position: absolute;
   padding: 20px;
-  margin-left: -2rem;
+  margin-left: -1rem;
   margin-top: 3rem;
   background-color: #dbb4ad;
 }

@@ -101,6 +101,8 @@
 .about {
     .img-me {
         height: 70vh;
+        z-index: -3;
+        position: $relative;
     }
 
     .sign {
