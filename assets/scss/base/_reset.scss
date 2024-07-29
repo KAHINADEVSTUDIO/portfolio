@@ -14,4 +14,12 @@ body {
         width: $max;
         object-fit: $cover;
     }
+
+    section {
+        padding: 10rem 0rem;
+
+        @media screen and (max-width: $mobile) {
+            padding: 5rem 1rem !important;
+        }
+    }
 }

@@ -1,0 +1,59 @@
+// TITLE
+
+.title { 
+    display: $flex;
+
+    span {
+        margin-right: 10px;
+        img {
+            @media screen and (max-width: $tablet) {
+                width: 80% !important;
+            }
+        }
+    }
+}
+
+// FONTS
+
+.subtitle {
+    font-size: 1.3rem !important;
+    font-family: $base;
+    text-transform: $uppercase;
+}
+
+// COLORS
+
+.color--dark {
+    color: $text !important;
+}
+
+.color--secondary {
+    color: $secondary !important;
+}
+
+// BACKGROUND 
+
+.background--dark {
+    background-color: $second-bg !important;
+}
+
+.background--primary {
+    background-color: $primary !important;
+}
+
+.background--span {
+    background-color: $span !important;
+}
+
+// MARGIN 
+
+.marg {
+    margin-top: 2rem;
+}
+
+// SPACE BETWEEN 
+
+.d-flex-between {
+    display: $flex !important;
+    justify-content: $space-between !important;
+}

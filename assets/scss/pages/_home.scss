@@ -1,0 +1,93 @@
+.home {
+    .background--width {
+        background: $second-bg;
+        width: 30%;
+        position: absolute;
+        top: 0px;
+        left: 37%;
+        height: 100%;
+        z-index: -3;
+
+        @media screen and (max-width: $mobile) {
+            left: 30% !important;
+            width: 40% !important;
+            height: 50% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 70%;
+        }
+
+        .width {
+            opacity: 0;
+        }
+    }
+
+    p {
+        padding-right: 25rem;
+
+        @media screen and (max-width: $tablet) {
+            padding-right: $zero !important;
+        }
+    }
+
+    .title {
+        @media screen and (max-width: $mobile) {
+            margin-top: 3rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 8rem;
+        }
+    }
+
+    .me {
+        @media screen and (max-width: $mobile) {
+            margin-top: -2rem !important;
+            width: 98% !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 96%;
+        }
+    }
+
+    .infos {
+        position: relative;
+        margin-top: -20rem;
+        margin-left: -8rem;
+
+        @media screen and (max-width: $mobile) {
+            margin-top: -6rem !important;
+            margin-left: -1rem !important;
+            margin-bottom: 0rem !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-left: $zero !important;
+            margin-bottom: 8rem;
+        }
+
+        span {
+            width: 50%;
+            font-size: 17px;
+            color: $background;
+            padding: 15px 25px;
+            display: $flex;
+            text-align: center;
+            flex-direction: column;
+
+            @media screen and (max-width: $mobile) {
+                width: 80% !important;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+        }
+
+        .location {
+            margin-left: 10%;
+        }
+    }
+}

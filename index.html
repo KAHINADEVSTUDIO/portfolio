@@ -44,18 +44,81 @@
     <header class="header" id="header" aria-label="Header du site web">
         <nav class="navbar">
             <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="assets/img/logo/logo.webp" class="logo" alt="Logo du site web" 
-                    aria-label="Logo du site web">
-                </a>
-                <button type="button" class="btn btn-menu" id="button-menu" aria-label="Ouvrir le menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+                <div class="menu-header d-flex-between">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="assets/img/logo/logo.webp" class="logo" alt="Logo du site web" 
+                        aria-label="Logo du site web">
+                    </a>
+                    <button type="button" class="btn btn-menu" id="button-menu" aria-label="Ouvrir le menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <div class="menu">
+                        <ul class="list-unstyled">
+                            <li class="nav-item">
+                                <a href="#header" class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#portfolio" class="nav-link">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#propos" class="nav-link">À propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#parcours" class="nav-link">Parcours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
+
+    <main class="main" id="main" aria-label="Main du site web">
+        <section class="home" id="accueil">
+            <div class="container">
+                <div class="row flex-lg-row-reverse">
+                    <div class="col-lg-5 col-md-12 text-end">
+                        <div class="background--width">
+                            <span class="width">g</span>
+                        </div>
+                        <img src="assets/img/moi/pic-of-me-one.webp" class="me" alt="Première photo de moi" aria-label="Première photo de moi">
+                        <div class="infos">
+                            <span class="job background--primary">
+                                <strong>Développeuse symfony</strong>
+                            </span>
+                            <span class="location background--span">
+                                <strong>Basée à Paris</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="title">
+                            <span>
+                                <img src="assets/img/icon/arabesque.webp" alt="">
+                            </span>
+                            <h1>Salut, je suis Kahina</h1>
+                        </div>
+                        <h2 class="subtitle marg color--secondary">
+                            <strong>Salut, Hello, Hola, 안녕하세요, سلام</strong>
+                        </h2>
+                        <p class="marg">
+                            Je considère mon travail comme une passion qui me permet de combiner le développement web, web design et les jeux vidéo. Je m'efforce de créer des solutions technologies créatives et inclusives.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 

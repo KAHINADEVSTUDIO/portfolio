@@ -1,4 +1,8 @@
 .header {
+    .menu-header {
+        width: $max !important;
+    }
+
     .navbar-brand {
         .logo {
             width: 15%;
@@ -43,8 +47,61 @@
                 width: $zero;
             }
 
-            &:nth-child(3) {
-                transform: translateY(-9px) rotate(90deg);
+        }
+    }
+}
+
+.sidebar {
+    top: $zero;
+    right: -300px;
+    height: $max;
+    width: 300px;
+    padding-top: 60px;
+    position: $fixed;
+    overflow-x: $hidden;
+    transition: right 0.3s ease;
+    background-color: $text;
+
+    .menu {
+        padding: 0rem 5rem;
+
+        .nav-item {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            .nav-link {
+                @include link-menu;
+
+                &::before {
+                    left: 30%;
+                    bottom: 0;
+                    height: 3px;
+                    content: '';
+                    width: 0;
+                    position: $absolute;
+                    visibility: $hidden;
+                    transform: translateX(-50%);
+                    background-color: $primary !important;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $primary !important;
+                    font-weight: 500;
+
+                    &::before {
+                        width: 60%;
+                        visibility: visible;
+
+                        @media screen and (max-width: $mobile) {
+                            width: 30% !important;
+
+                        }
+                    }
+                }
             }
         }
     }

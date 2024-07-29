@@ -15,6 +15,7 @@ $accent: #ffe3dc;
 // SECOND 
 
 $second-bg: #24181d;
+$span: #5d4b59;
 
 // SIZE 
 
@@ -31,6 +32,7 @@ $cover: cover;
 // DISPLAY 
 
 $none: none; 
+$flex: flex;
 $block: block;
 
 // POSITION 
@@ -38,3 +40,22 @@ $block: block;
 $fixed: fixed;
 $absolute: absolute;
 $relative: relative;
+
+// OVERFLOW 
+
+$hidden: hidden;
+
+// MEDIA QUERIES
+
+$mobile: 578px;
+$small-tablet: 769px;
+$tablet: 1024px;
+$desktop: 1480px;
+
+// TRANSFORM 
+
+$uppercase: uppercase;
+
+// JUSTIFY CONTENT 
+
+$space-between: space-between;
