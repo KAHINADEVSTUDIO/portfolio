@@ -1,0 +1,17 @@
+* {
+    margin: $zero;
+    padding: $zero;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    color: $text;
+    background-color: $background;
+
+    img {
+        width: $max;
+        object-fit: $cover;
+    }
+}
