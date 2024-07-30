@@ -9,15 +9,16 @@
 }
 
 .btn-round {
+    color: $secondary;
     padding: 20px !important;
-    border: 2px solid $text !important;
+    border: 2px solid $secondary !important;
     border-radius: 50% !important;
 
     &:hover,
     &:focus,
     &:active {
         color: $background;
-        background-color: $text;
+        background-color: $secondary;
     }
 }
 

@@ -603,13 +603,14 @@ strong {
 }
 
 .btn-round {
+  color: #dbb4ad;
   padding: 20px !important;
-  border: 2px solid #3a2d32 !important;
+  border: 2px solid #dbb4ad !important;
   border-radius: 50% !important;
 }
 .btn-round:hover, .btn-round:focus, .btn-round:active {
   color: #F5F5F5;
-  background-color: #3a2d32;
+  background-color: #dbb4ad;
 }
 
 .btn-dark {

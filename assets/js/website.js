@@ -18,31 +18,30 @@ const toggleSidebar = () => {
 
 toggleBtn.addEventListener("click", toggleSidebar);
 
-// BUTTON TOP
+// BUTTON FIXED & TOP
 
 let topButton = document.getElementById("top");
+let sidebarButton = document.getElementById("button-menu"); 
 
-window.onscroll = function () {
-    scrollFunction();
-};
+let sidebarOffsetTop = sidebarButton.offsetTop; 
 
-function scrollFunction () {
+function handleScroll() {
     
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-
         topButton.style.display = "block";
-
     } else {
-
         topButton.style.display = "none";
-
     }
 
-};
+    if (window.pageYOffset >= sidebarOffsetTop) {
+        sidebarButton.style.position = "fixed";
+        sidebarButton.style.top = "10px";
+        sidebarButton.style.right = "10px";
+    } else {
+        sidebarButton.style.position = "relative";
+        sidebarButton.style.top = "";
+        sidebarButton.style.right = "0px";
+    }
+}
 
-topButton.onclick = function() {
-
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;
-
-};
+window.onscroll = handleScroll;
