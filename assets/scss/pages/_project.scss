@@ -1,0 +1,22 @@
+.project-name {
+    padding: 5rem $zero !important;
+}
+
+.banner {
+    padding: $zero !important;
+
+    img {
+        width: $max;
+        height: 100vh;
+    }
+}
+
+.category {
+    p {
+        padding-left: 1rem;
+
+        @media screen and (max-width: $mobile) {
+            padding-left: $zero !important;
+        }
+    }
+}

@@ -36,7 +36,7 @@ function handleScroll() {
     if (window.pageYOffset >= sidebarOffsetTop) {
         sidebarButton.style.position = "fixed";
         sidebarButton.style.top = "10px";
-        sidebarButton.style.right = "10px";
+        sidebarButton.style.right = "0px";
     } else {
         sidebarButton.style.position = "relative";
         sidebarButton.style.top = "";

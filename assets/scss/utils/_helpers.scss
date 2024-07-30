@@ -127,3 +127,18 @@
         width: 32% !important;
     }
 }
+
+// PROJECTS
+
+.category {
+    .category-name {
+        background-color: $transparent !important;
+        color: $primary !important;
+        font-weight: 600;
+        padding: 20px;
+        width: $max !important;
+        position: $relative;
+        text-align: $center;
+        border: 2px solid $primary !important;
+    }
+}

@@ -113,6 +113,17 @@
   }
 }
 
+.category .category-name {
+  background-color: transparent !important;
+  color: #ae979b !important;
+  font-weight: 600;
+  padding: 20px;
+  width: 100% !important;
+  position: relative;
+  text-align: center;
+  border: 2px solid #ae979b !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -521,6 +532,27 @@ strong {
 }
 .contact ul li a i {
   margin-right: 10px;
+}
+
+.project-name {
+  padding: 5rem 0 !important;
+}
+
+.banner {
+  padding: 0 !important;
+}
+.banner img {
+  width: 100%;
+  height: 100vh;
+}
+
+.category p {
+  padding-left: 1rem;
+}
+@media screen and (max-width: 578px) {
+  .category p {
+    padding-left: 0 !important;
+  }
 }
 
 .card {
