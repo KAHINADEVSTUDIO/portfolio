@@ -69,6 +69,15 @@
     }
 }
 
+.button-fixed {
+    right: 10px;
+    background-color: $span;
+
+    span {
+        background-color: $background !important;
+    }
+}
+
 .sidebar {
     top: $zero;
     right: $zero;

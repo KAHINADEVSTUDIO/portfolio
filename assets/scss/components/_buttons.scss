@@ -33,3 +33,20 @@
         background-color: $accent;
     }
 }
+
+.btn-accent {
+    color: $primary;
+    background-color: $accent;
+
+    
+    &:hover,
+    &:focus,
+    &:active {
+        color: $background;
+        background-color: $text;
+    }
+}
+
+.btn-max {
+    width: $max;
+}

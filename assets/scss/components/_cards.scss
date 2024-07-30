@@ -76,3 +76,19 @@
         }
     }
 }
+
+.card-goal {
+    padding: 2rem;
+}
+
+.card-comparison {
+    background-color: $transparent;
+
+    .image-logo {
+        text-align: $center;
+
+        img {
+            width: 60%;
+        }
+    }
+}

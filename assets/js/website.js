@@ -36,11 +36,11 @@ function handleScroll() {
     if (window.pageYOffset >= sidebarOffsetTop) {
         sidebarButton.style.position = "fixed";
         sidebarButton.style.top = "10px";
-        sidebarButton.style.right = "0px";
+        sidebarButton.classList.add("button-fixed");
     } else {
         sidebarButton.style.position = "relative";
         sidebarButton.style.top = "";
-        sidebarButton.style.right = "0px";
+        sidebarButton.classList.remove("button-fixed");
     }
 }
 

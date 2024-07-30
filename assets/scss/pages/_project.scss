@@ -1,4 +1,5 @@
-.project-name {
+.project-name, 
+.comparison {
     padding: 5rem $zero !important;
 }
 
@@ -8,6 +9,14 @@
     img {
         width: $max;
         height: 100vh;
+
+        @media screen and (max-width: $mobile) {
+            height: 45vh !important;
+        }
+
+        @media screen and (max-width: $tablet) {
+            height: 60vh;
+        }
     }
 }
 
