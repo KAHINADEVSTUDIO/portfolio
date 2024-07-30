@@ -28,4 +28,18 @@
             padding-left: $zero !important;
         }
     }
+    
+    .btn {
+        margin-left: 1rem;
+
+        @media screen and (max-width: $mobile) {
+            margin-left: $zero !important;
+        }
+    }
+}
+
+.project-images {
+    img {
+        height: 70vh;
+    }
 }

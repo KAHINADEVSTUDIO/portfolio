@@ -34,11 +34,47 @@
     }
 }
 
+.btn-secondary {
+    color: $text;
+    background-color: $secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent;
+        background-color: $primary;
+    }
+}
+
+.btn-primary {
+    color: $accent;
+    background-color: $primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $text;
+        background-color: $secondary;
+    }
+}
+
+.btn-span {
+    color: $background;
+    background-color: $span;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $accent;
+        background-color: $second-bg;
+    }
+}
+
 .btn-accent {
     color: $primary;
     background-color: $accent;
 
-    
+
     &:hover,
     &:focus,
     &:active {
