@@ -547,6 +547,13 @@ strong {
   padding: 5rem 0 !important;
 }
 
+@media screen and (max-width: 578px) {
+  .project-name {
+    font-size: 2.7rem !important;
+    margin-top: 5px;
+  }
+}
+
 .banner {
   padding: 0 !important;
 }
@@ -699,20 +706,20 @@ strong {
   background-color: #ffe3dc;
 }
 
-.btn-secondary {
+.btn--secondary {
   color: #3a2d32;
   background-color: #dbb4ad;
 }
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+.btn--secondary:hover, .btn--secondary:focus, .btn--secondary:active {
   color: #ffe3dc;
   background-color: #ae979b;
 }
 
-.btn-primary {
+.btn--primary {
   color: #ffe3dc;
   background-color: #ae979b;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn--primary:hover, .btn--primary:focus, .btn--primary:active {
   color: #3a2d32;
   background-color: #dbb4ad;
 }
