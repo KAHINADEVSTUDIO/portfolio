@@ -56,6 +56,10 @@
 
 // BACKGROUND 
 
+.background--text {
+    background-color: $text !important;
+}
+
 .background--dark {
     background-color: $second-bg !important;
 }
@@ -140,5 +144,31 @@
         position: $relative;
         text-align: $center;
         border: 2px solid $primary !important;
+    }
+}
+
+.span-cat {
+    width: 50%;
+    font-size: 17px;
+    color: $background;
+    padding: 15px 25px;
+    display: $flex;
+    text-align: center;
+    flex-direction: column;
+
+    @media screen and (max-width: $mobile) {
+        width: 80% !important;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+// NONE
+
+.none-tablet {
+    @media screen and (max-width: $tablet) {
+        display: $none;
     }
 }

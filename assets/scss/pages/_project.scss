@@ -1,4 +1,4 @@
-.project-name, 
+.project-name,
 .comparison {
     padding: 5rem $zero !important;
 }
@@ -15,16 +15,38 @@
 .banner {
     padding: $zero !important;
 
-    img {
-        width: $max;
-        height: 100vh;
+    .image-ban {
+        padding: $zero !important;
+    }
+
+    .project-category {
+        margin-top: 35%;
+        position: $relative !important;
+        margin-left: -30%;
 
         @media screen and (max-width: $mobile) {
-            height: 45vh !important;
+            margin-left: 2% !important;
+            margin-top: -8% !important;
+        }
+
+        .second {
+            margin-left: 5%;
+        }
+
+        .third {
+            margin-left: 10%;
+        }
+    }
+
+    p {
+        padding: 10rem $zero;
+
+        @media screen and (max-width: $mobile) {
+            padding: 0rem 1rem 5rem 1rem !important;
         }
 
         @media screen and (max-width: $tablet) {
-            height: 60vh;
+            padding: 5rem;
         }
     }
 }
@@ -37,7 +59,7 @@
             padding-left: $zero !important;
         }
     }
-    
+
     .btn {
         margin-left: 1rem;
 

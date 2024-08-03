@@ -86,3 +86,15 @@
 .btn-max {
     width: $max;
 }
+
+.btn-border-light {
+    color: $secondary;
+    border: 2px solid $secondary !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $text;
+        background-color: $secondary;
+    }
+}

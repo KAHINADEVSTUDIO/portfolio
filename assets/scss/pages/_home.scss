@@ -68,24 +68,6 @@
             margin-bottom: 8rem;
         }
 
-        span {
-            width: 50%;
-            font-size: 17px;
-            color: $background;
-            padding: 15px 25px;
-            display: $flex;
-            text-align: center;
-            flex-direction: column;
-
-            @media screen and (max-width: $mobile) {
-                width: 80% !important;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 18px;
-            }
-        }
-
         .location {
             margin-left: 10%;
         }
