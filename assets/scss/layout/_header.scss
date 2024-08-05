@@ -74,6 +74,14 @@
     background-color: $span;
 
     span {
+        color: $primary !important;
+        background-color: $background !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $primary !important;
         background-color: $background !important;
     }
 }

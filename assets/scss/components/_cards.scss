@@ -83,14 +83,8 @@
     padding: 2rem;
 }
 
-.card-comparison {
-    background-color: $transparent;
 
-    .image-logo {
-        text-align: $center;
-
-        img {
-            width: 60%;
-        }
-    }
+.card-logo {
+    text-align: $center;
+    background-color: $transparent !important;
 }

@@ -319,6 +319,11 @@ strong {
   background-color: #5d4b59;
 }
 .button-fixed span {
+  color: #ae979b !important;
+  background-color: #F5F5F5 !important;
+}
+.button-fixed:hover, .button-fixed:focus, .button-fixed:active {
+  color: #ae979b !important;
   background-color: #F5F5F5 !important;
 }
 
@@ -553,8 +558,7 @@ strong {
   margin-right: 10px;
 }
 
-.project-name,
-.comparison {
+.project-name {
   padding: 5rem 0 !important;
 }
 
@@ -566,7 +570,12 @@ strong {
 }
 
 .banner {
-  padding: 0 !important;
+  padding: 0 0 10rem 0;
+}
+@media screen and (max-width: 578px) {
+  .banner {
+    padding: 0 0 5rem 0 !important;
+  }
 }
 .banner .image-ban {
   padding: 0 !important;
@@ -589,38 +598,34 @@ strong {
   margin-left: 10%;
 }
 .banner p {
-  padding: 10rem 0;
+  padding: 10rem 0 0 0;
 }
 @media screen and (max-width: 578px) {
   .banner p {
-    padding: 0rem 1rem 5rem 1rem !important;
+    padding: 0rem 1rem 0rem 1rem !important;
   }
 }
 @media screen and (max-width: 1024px) {
   .banner p {
-    padding: 5rem;
+    padding: 5rem 0 0 0;
   }
 }
 
-.category p {
-  padding-left: 1rem;
+.image-logo {
+  text-align: center;
 }
-@media screen and (max-width: 578px) {
-  .category p {
-    padding-left: 0 !important;
-  }
+.image-logo img {
+  width: 50%;
 }
-.category .btn {
-  margin-left: 1rem;
-}
-@media screen and (max-width: 578px) {
-  .category .btn {
-    margin-left: 0 !important;
+@media screen and (max-width: 1024px) {
+  .image-logo img {
+    width: 100% !important;
   }
 }
 
-.project-images img {
-  height: 70vh;
+.comparison .title,
+.project-images .title {
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -699,14 +704,9 @@ strong {
   padding: 2rem;
 }
 
-.card-comparison {
-  background-color: transparent;
-}
-.card-comparison .image-logo {
+.card-logo {
   text-align: center;
-}
-.card-comparison .image-logo img {
-  width: 60%;
+  background-color: transparent !important;
 }
 
 .btn {

@@ -1,5 +1,4 @@
-.project-name,
-.comparison {
+.project-name {
     padding: 5rem $zero !important;
 }
 
@@ -13,7 +12,11 @@
 }
 
 .banner {
-    padding: $zero !important;
+    padding: $zero $zero 10rem $zero;
+
+    @media screen and (max-width: $mobile) {
+        padding: $zero $zero 5rem $zero !important;
+    }
 
     .image-ban {
         padding: $zero !important;
@@ -39,38 +42,33 @@
     }
 
     p {
-        padding: 10rem $zero;
+        padding: 10rem $zero $zero $zero;
 
         @media screen and (max-width: $mobile) {
-            padding: 0rem 1rem 5rem 1rem !important;
+            padding: 0rem 1rem 0rem 1rem !important;
         }
 
         @media screen and (max-width: $tablet) {
-            padding: 5rem;
+            padding: 5rem $zero $zero $zero;
         }
     }
 }
 
-.category {
-    p {
-        padding-left: 1rem;
+.image-logo {
+    text-align: $center;
 
-        @media screen and (max-width: $mobile) {
-            padding-left: $zero !important;
-        }
-    }
-
-    .btn {
-        margin-left: 1rem;
-
-        @media screen and (max-width: $mobile) {
-            margin-left: $zero !important;
-        }
-    }
-}
-
-.project-images {
     img {
-        height: 70vh;
+        width: 50%;
+
+        @media screen and (max-width: $tablet) {
+            width: $max !important;
+        }
+    }
+}
+
+.comparison,
+.project-images {
+    .title {
+        margin-bottom: 4rem;
     }
 }
