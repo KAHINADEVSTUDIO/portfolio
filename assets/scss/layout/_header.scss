@@ -71,7 +71,7 @@
 
 .button-fixed {
     right: 10px;
-    background-color: $span;
+    background-color: $span !important;
 
     span {
         background-color: $primary !important;

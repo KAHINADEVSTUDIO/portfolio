@@ -41,6 +41,7 @@ function handleScroll() {
         sidebarButton.style.position = "relative";
         sidebarButton.style.top = "";
         sidebarButton.classList.remove("button-fixed");
+        sidebarButton.style.backgroundColor = "transparent";
     }
 }
 

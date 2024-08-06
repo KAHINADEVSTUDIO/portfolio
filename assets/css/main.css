@@ -316,7 +316,7 @@ strong {
 
 .button-fixed {
   right: 10px;
-  background-color: #5d4b59;
+  background-color: #5d4b59 !important;
 }
 .button-fixed span {
   background-color: #ae979b !important;
