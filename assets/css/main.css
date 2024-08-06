@@ -319,12 +319,7 @@ strong {
   background-color: #5d4b59;
 }
 .button-fixed span {
-  color: #ae979b !important;
-  background-color: #F5F5F5 !important;
-}
-.button-fixed:hover, .button-fixed:focus, .button-fixed:active {
-  color: #ae979b !important;
-  background-color: #F5F5F5 !important;
+  background-color: #ae979b !important;
 }
 
 .sidebar {
